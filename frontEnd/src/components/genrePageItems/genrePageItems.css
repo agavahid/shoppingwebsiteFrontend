@@ -1,0 +1,57 @@
+
+.genrePageItem{
+    width: 270px;
+    margin: 14px 0;
+    box-shadow: 0 50px 75px rgba(0,0,0,.05);
+    border-radius: 4px;
+}
+.genrePageItemHeader{
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.genrePageLikeIcon{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border-radius: 50%;
+    background: #fff;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.genrePageItemHeader>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+.genrePageItemBody h3{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 8px;
+    color: #3a3a3a;
+}
+.genrePageItemBody span, .linkToChoosedItem{
+    padding: 1px 8px;
+}
+.genrePageItemBody{
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+.linkToChoosedItem{
+    text-decoration: none;
+    color: #683bc8;
+}
+
+@media screen and (max-width: 1168px) {
+    .genrePageItem{
+        width: 145px;
+    }
+    .genrePageItemBody span, .linkToChoosedItem, .genrePageItemBody > h3{
+        font-size: 12px;
+    }
+}

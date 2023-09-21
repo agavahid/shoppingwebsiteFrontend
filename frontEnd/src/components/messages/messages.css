@@ -1,0 +1,7 @@
+
+
+.messages-container{
+    width: calc(100% - 80px);
+    background-color: #fff;
+    padding: 40px;
+}

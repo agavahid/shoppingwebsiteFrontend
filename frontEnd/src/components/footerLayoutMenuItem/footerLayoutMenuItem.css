@@ -1,0 +1,16 @@
+.footerMenuItemContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.linkToFooterMenuItem{
+    text-decoration: none;
+    color: #fff;
+    padding: 4px 0;
+    font-weight: 300;
+}
+.footerMenuItemHeader h3{
+    opacity: 0.6;
+    color: #fff;
+    font-weight: 400;
+}

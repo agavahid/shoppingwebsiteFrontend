@@ -1,0 +1,119 @@
+.settingsdiv{
+    display: block;
+}
+.user-informations-contents, .adjusments-contents{
+    display: flex;
+    justify-content: space-between;
+}
+.user-information-container, .adjusments-container{
+    padding: 36px;
+}
+.user-information-container h2{
+    margin-top: 0;
+}
+.user-information-container h2, .user-information-container h4, .adjusments-container h4, .adjusments-container h2{
+    color: #3a3a3a;
+    font-weight: 500;
+}
+.settingsdiv{
+    background-color: #fff;
+}
+.settings-form{
+    width: calc(100% - 55px);
+}
+.user-informations-left-content, .user-informations-right-content, .adjusments-left-content, .adjusments-right-content{
+    width: calc(50% - 20px);
+}
+.settings-field-container, .adjusments-field-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+    height: 40px;
+    padding: 4px 14px;
+    margin-bottom: 10px;
+    position: relative;
+    background-color: hsla(0,0%,89.8%,.25);
+    color: #532bc4; 
+}
+.settings-form-field{
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: hsla(0,0%,89.8%,0.0);
+}
+.notePadIcon, .defaultUserPic, .phoneIcon, .lockIcon, .emailIcon, .cameraIcon{
+    width: 18px;
+    opacity: 0.5;
+}
+.save-button{
+    width: 100%;
+    font-size: .875rem;
+    line-height: 1.0625rem;
+    text-align: center;
+    color: #fff;
+    background: #532bc4;
+    border-radius: 0.3125rem;
+    border: 0;
+    outline: none;
+    padding: 0.9375rem;
+    margin-top: 0.625rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+.settings-form-field::-webkit-inner-spin-button,
+.settings-form-field::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+    opacity: 0;
+}
+#file{
+    display: none;
+}
+.fileLabel{
+    display: flex;
+    margin: 0 auto;
+}
+.adjusments-sex-field-container{
+    display: flex;
+    align-items: center;
+}
+.sex-check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.625rem;
+    background: hsla(0,0%,96.9%,.5);
+    border-radius: 0.3125rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: .875rem;
+    line-height: 1.0625rem;
+    color: #3a3a3a;
+    font-weight: 400;
+    cursor: pointer;
+}
+.sex-check-active{
+    background-color: rgba(220,207,255,.25);
+    color: #532bc4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.625rem;
+    border-radius: 0.3125rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: .875rem;
+    line-height: 1.0625rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:1168px) {
+    .user-information-container>h2{
+        font-size: 18px;
+    }
+}

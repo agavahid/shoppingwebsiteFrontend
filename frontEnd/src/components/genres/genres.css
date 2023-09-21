@@ -1,0 +1,88 @@
+.genresMain{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    margin-right:49px;
+    cursor: pointer;
+    position: relative;
+}
+.genresHeader h4{
+    color: #fff;
+}
+.whiteArrowIcon{
+    width: 20px;
+}
+.genresArrow{
+    line-height: 0;
+}
+.genrescaret{
+    position: absolute;
+    top: 46px;
+    right: -2px;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    display: none;
+}
+.genrescaret.active{
+    display: block;
+}
+.genresMenu{
+    position: absolute;
+    top: 52px;
+    z-index: 333;
+    background-color: #fff;
+    display: none;
+    border-radius: 4px;
+}
+.genresMenu.active{
+    display: block;
+}
+.genresMenuHeader{
+    margin: 15px 0 0px 26px;
+    color: #3a3a3a;
+}
+.genreCardList{
+    margin: 0;
+    padding: 25px 0;
+    width: 457px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.genreCardListItem{
+    list-style: none;
+    text-decoration: none;
+    color: #3a3a3a;
+    padding: 8px 51px;
+}
+.genreCardListItem:hover{
+    background-color: #ffe1e1;
+}
+@media screen and (max-width: 1168px) {
+    .genresHeader h4{
+        color: #3a3a3a;
+    }
+    .whiteArrowIcon{
+        color: #3a3a3a;
+    }
+    .genresMain{
+        justify-content: unset;
+    }
+    .genresArrow {
+        margin-left: 15px;
+    }
+    .genreCardList{
+        width: 100%;
+    }
+    .genreCardListItem{
+        padding: 8px 40px;
+    }
+    .genresMenuHeader {
+        margin: 15px 0 0 0;
+    }
+}

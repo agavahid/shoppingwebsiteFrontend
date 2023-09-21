@@ -1,0 +1,71 @@
+
+.registerPage{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FCF6F5;
+}
+.registerSection{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 300px;
+    padding: 30px;
+    border: 0.5px solid #aeacac;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.registerSection h1{
+    font-size: 15px;
+    text-align: center;
+    opacity: 0.8;
+    font-weight: 500;
+}
+.registerFormInput{
+    width: calc(100% - 20px);
+    padding: 12px 10px;
+    outline: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #8b54ff
+}
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.pageImgItem{
+    height: 300px;
+    margin: 20px 0;
+}
+.registerLabel{
+    width: 100%;
+}
+.registerButton{
+    width: 100%;
+    height: 44px;
+    border: none;
+    border-radius: 3px;
+    background-image: linear-gradient(to left,#8b54ff 0%,#FF5079 100%);
+    color: #FCF6F5;
+    cursor: pointer;
+}
+.badRequestMessage{
+    color: red;    
+    margin: 12px 0 0 0;
+    font-size: 25px;
+}
+.registerSectionLoginPart p{
+    margin: 3px 0;
+}
+.registerSectionLoginPart{
+    margin-top: 15px;
+}
+.linkToLogin{
+    text-decoration: none;
+}
+@media screen and (max-width: 1168px){
+    .registerSection{
+        width: 100%;
+    }
+}

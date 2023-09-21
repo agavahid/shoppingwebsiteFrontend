@@ -1,0 +1,50 @@
+
+.profile-header-navBar{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.profPageNavItem{
+    width: 12.4375rem;
+    height: 3.125rem;
+    background: #fff;
+    border-radius: 0.3125rem;
+    font-size: .875rem;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(58,58,58,.5);
+    text-decoration: none;
+    font-weight: 700;
+}
+.profile-navbar-ul{
+    display: flex;
+    justify-Content: space-between;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.profPageNavItem.active{
+    width: 12.4375rem;
+    height: 3.125rem;
+    background: #fff;
+    border-radius: 0.3125rem;
+    font-size: .875rem;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(58,58,58);
+    text-decoration: none;
+    font-weight: 700;
+}
+@media screen and (max-width:1168px) {
+    .profile-navbar-ul{
+        flex-wrap: wrap;
+    }
+    .profPageNavItem, .profPageNavItem.active{
+        width: 100%;
+    }
+    
+}

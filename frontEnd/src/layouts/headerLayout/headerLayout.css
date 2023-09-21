@@ -1,0 +1,218 @@
+
+.mainLogo{
+    width: 79px;
+    height: 59px;
+    border-radius: 50%;
+    margin-right: 18px;
+}
+.container{
+    padding: 11px;
+    background-image: linear-gradient(to right,#858995 0%,#000000 100%);
+    background-repeat: repeat-x;
+}
+.contents{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto
+}
+.leftContents{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+.headerLogo{
+    display: flex;
+}
+.rightContents{
+    position: relative;
+}
+.rightContentsUser{
+    display: flex;
+    cursor: pointer;
+}
+.rightContentsUserHeader>h3{
+    color: white;
+}
+.toLogin, .toRegister{
+    text-decoration: none;
+    color: #8b54ff;
+    display: flex;
+    align-items: center;
+    padding: 12px 50px;
+    width: 111px;
+}
+.userProfileCaret{
+    background-color: #fff;
+    width: 24px;
+    height: 24px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 48px;
+    left: 60px;
+    display: none;
+}
+.rightContentsUserBody{
+    position: absolute;
+    top: 59px;
+    left: 26px;
+    z-index: 4;
+    padding: 20px 0;
+    border-radius: 2px;
+    background-color: #fff;
+    display: none;
+}
+.rightContentsUserBody.active, .userProfileCaret.active{
+    display: block;
+}
+.rightContentsUserBody.active{
+    box-shadow:  2px 3.1px 16px #aea0a0;
+}
+.toLogin:hover, .toRegister:hover{
+    background-color: #c9c5c5;
+}
+.toCartItem{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.rightContents{
+    display: flex;
+    align-items: center;
+}
+.toLogin>img{
+    border-radius: 96%;
+    background-image: linear-gradient(to right,#8b54ff 0%,#FF5079 100%);
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.leftContentsTop, .leftMobileMenuIcon, .rightMobileMenuIcon, .rightContentsMenuShadow, .rightContentsMenuTop{
+    display: none;
+}
+.rightContentsMenu, .rightContentsMenuBottom{
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width: 1168px) {
+    .contents{
+        width: 100%;
+    }
+    .container{
+        width: calc(100% - 22px);
+    }
+    .container{
+        position: relative;
+    }
+    .leftMobileMenuIcon, .rightMobileMenuIcon, .leftContentsTop{
+        display: block;
+    }
+    .rightMobileMenuIcon>img, .leftMobileMenuIcon>img{
+        width: 40px;
+    }
+    .leftContents{
+        flex-direction: column;
+        position: absolute;
+        width: 0;
+        height: 0;
+        opacity: 0;
+        left: 0;
+        top: 65px;
+    }
+    .rightContentsMenu{
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 0;
+        opacity: 0;
+        right: 0;
+        top: 65px;
+        padding: 20px;
+    }
+    .rightContentsMenu.active{
+        opacity: 1;
+        width: 35%;
+        transition: 0.7s;
+        background-color: #fff;
+        z-index: 444;
+    }
+    .leftContents.active{
+        opacity: 1;
+        width: 40%;
+        background-color: #fff;
+        z-index: 444;
+    }
+    .leftContentShadow.active, .rightContentShadow.active{
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background: #43497b;
+        opacity: 0.6;
+    }
+    .rightContentsMenu.active{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+    }
+    .leftContentsMenu{
+        width: 0;
+        position: unset;
+        transition: 0.7s;
+        padding: 30px;
+    }
+    .leftContentsMenu.active{
+        position: fixed;
+        background: #fff;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 35%;
+        flex-direction: column;
+    }
+    .rightContentsMenu.active{
+        height: auto;
+    }
+    .rightContentsMenuBottom, .rightContentsMenuTop{
+        display: none;
+    }
+    .rightContentsMenuBottom.active, .rightContentsMenuTop.active{
+        display: block;
+    }
+    .rightContentsMenuTop{
+        float: right;
+        line-height: 2.7;
+    }
+    .leftContentsTop>img{
+        cursor: pointer;
+    }
+    .leftContentsTop{
+        float: right;
+        line-height: 4;
+    }
+    .headerLogo{
+        flex-direction: column;
+    }
+    .rightContentsUserHeader>h3{
+        color: #3a3a3a;
+    }
+    .userProfileCaret.active{
+        display: none;
+    }
+    .rightContentsUserBody{
+        top: 103px;
+        left: 0;
+    }
+    .rightContentsUserBody.active{
+        box-shadow: none;
+    }
+    .toLogin, .toRegister{
+        width: calc(100% - 50px);
+        padding: 12px 25px;
+    }
+}

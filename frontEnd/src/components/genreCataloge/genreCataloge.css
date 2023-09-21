@@ -1,0 +1,57 @@
+.genreCatalogeContainer{
+    width: 1100px;
+    margin: 0 auto;
+}
+.genreCatalogeHeader h3{
+    font-size: 21px;
+    font-weight: 400;
+}
+.genreCatalogeMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1100px;
+    margin: 0 auto;
+}
+.genreCalatogeMenuItem{
+    width: 340px;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 20px 0;
+    text-decoration: none;
+    color: #fff;
+}
+.spanHolderLinear{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    background-color: black;
+    opacity: 0.37;
+    height: 60px;
+    width: 100%;
+}
+.genreCalatogeMenuItem img{
+    width: 100%;
+    height: 100%;
+}
+.genreCalatogeMenuItem span{
+    position: absolute;
+}
+@media screen and (max-width: 1168px){
+    .genreCatalogeContainer{
+        width: 100%;
+    }
+    .genreCatalogeMenu{
+        width: calc(100% - 14px);
+        padding: 0 7px;
+    }
+    .genreCalatogeMenuItem{
+        width: 150px;
+        height: 140px;
+    }
+}

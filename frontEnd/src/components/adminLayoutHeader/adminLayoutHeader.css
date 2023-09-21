@@ -1,0 +1,73 @@
+
+
+.user-profile-sideBar{
+    width: 270px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.userProfile-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 60px 0 20px 0;
+    border-radius: 5px;
+}
+.userProfile-bottom{
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+.userProfile-bottom > h4{
+    padding: 0 0 20px 0;
+    margin: 0;
+}
+.defaultProfilePic{
+    width: 150px;
+    height: 150px;
+}
+.register-date{
+    margin-top: 5px;
+    line-height: 150%;
+    text-align: center;
+    color: rgba(0,0,0,.75);
+    background: hsla(0,0%,96.9%,.5);
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.specialDateSpan, .userRegisterEmail{
+    font-size: 14px;
+}
+.userRegisterEmail, .userName{
+    display: flex;
+    flex-direction: column;
+}
+.userName{
+    font-size: 17px;
+    padding: 0;
+    margin: 0;
+}
+.specialDateSpan{
+    color: #5cc186;
+}
+@media screen and (max-width:1168px) {
+    
+    .user-profile-sideBar{
+        width: 100%;
+    }
+    .userProfile-bottom{
+        flex-direction: column;
+        margin: 10px 0 10px;
+    }
+}

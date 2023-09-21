@@ -1,0 +1,20 @@
+
+
+.profileOfUser{
+    width: calc(100% - 80px);
+    padding: 40px;
+    background-color: #fff;
+}
+.no-content{
+    margin-top: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6.625rem;
+    border: 0.125rem dashed rgba(58,58,58,.15);
+    border-radius: 0.625rem;
+    font-size: .875rem;
+    line-height: 170%;
+    text-align: center;
+    color: rgba(58,58,58,.5);
+}

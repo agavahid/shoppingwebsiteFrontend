@@ -1,0 +1,91 @@
+body.active-modal-add {
+    overflow-y: hidden;
+}
+
+.btn-modal-add {
+    padding: 10px 20px;
+    display: block;
+    margin: 60px 0 30px 0;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 1px dotted;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-modal-add span {
+    font-size: 20px;
+    margin-left: 20px;
+}
+.modalAdd, .overlayAdd {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlayAdd {
+    background: rgba(49,49,49,0.8);
+}
+.modal-content-add {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.close-modal-add {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+}
+.addNewItemIcon{
+    width: 40px;
+    height: 30px;
+}
+.addItemform-control{
+    height: 25px;
+    padding: 11px 16px;
+    width: calc(100% - 32px);
+    outline: 0;
+    border: none;
+    border-radius: 4px;
+}
+.mb{
+    margin: 8px 0;
+}
+
+.modal-close-add, .modal-send-add{
+    border: none;
+    outline: none;
+    height: 42px;
+    background: #94949466;
+    border-radius: 6px;
+    margin: 8px 0;
+    cursor: pointer;
+}
+.modal-close-add:hover, .modal-send-add:hover{
+    background-color: #949494d4;
+    color: #fff;
+}
+.nationFormItemMenu li, .genreFormItemMenu li{
+    list-style: none;
+}
+@media screen and (max-width: 1168px) {
+    .modal-content-add{
+        position: fixed;
+        z-index: 33;
+    }
+}

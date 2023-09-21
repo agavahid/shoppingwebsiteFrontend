@@ -1,0 +1,204 @@
+
+
+.liked-list-header{
+    width: calc(100% - 70px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 22px 35px;
+    margin-bottom: 7px;
+}
+.liked-list-header> h2{
+    font-size: 28px;
+    font-weight: 400;
+}
+.arrow-icon{
+    width: 24px;
+    height: 24px;
+    margin-left: 11px;
+}
+.choose-direction-container{ 
+    position: relative;
+}
+.choose-direction-container-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 180px;
+    height: 50px;
+    background: #f7f7f7;
+    border-radius: 4px;
+    font-size: 1rem;
+    line-height: 150%;
+    color: #3a3a3a;
+    margin-top: 0;
+    position: relative;
+    cursor: pointer;
+}
+.select-submenu{
+    position: absolute;
+    box-shadow: 0 4px 75px rgb(58 58 58 / 10%);
+    background: #fff;
+    top: 64px;
+    width: 235px;
+    z-index: 333;
+}
+.select-submenu-caret{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -10px;
+    transform: rotate(45deg);
+    left: 20px;
+    background-color: #fff;
+}
+.select-list-items{
+    list-style: none;
+    margin: 0;
+    padding: 20px 0;
+}
+.select-list-items li{
+    padding: 14px 30px;
+    cursor: pointer;
+}
+.select-list-items li:hover{
+    background-color: #f7f7f7;
+}
+.liked-list-body{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.selected-item{
+    border: 1px solid #f6f6f6;
+    box-shadow: 0 50px 75px rgb(0 0 0 / 5%);
+    border-radius: 0.3125rem;
+    position: relative;
+    margin: 0 1px 4px 0;
+    background-color: #fff;
+}
+.selected-item-img-container{
+    width: 270px;
+    height: 190px;
+    position: relative;
+}
+.selected-item-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.count-icon-container{
+    position: absolute;
+    bottom: 19px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.count-span{
+    color: #fff;
+}
+.hearth-icon-container{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.selected-item-text-container{
+    padding: 6px 25px;
+}
+.selected-item-text-container>a{
+    text-decoration: none;
+    color: #3a3a3a;
+}
+.selected-item-text-container h3, .choosedItemIconText h3{
+    max-width: 220px;
+    margin: 15px 0;
+    font-weight: 400;
+    font-size: 16.5px;
+}
+.selected-item-text-container span{
+    display: flex;
+    font-size: 14.5px;
+}
+.choosedItemIconText img{
+    width: 20px;
+    margin-right: 8px;
+}
+.choosedItemIconText{
+    display: flex;
+    align-items: center;
+}
+.no-choosed-item-container{
+    width: 100%;
+    padding: 40px;
+    background-color: #fff;
+}
+.no-choosed-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    border: 2px dashed rgba(58,58,58,.15);
+    border-radius: 0.625rem;
+    font-size: .875rem;
+    line-height: 170%;
+    text-align: center;
+    color: rgba(58,58,58,.5);
+}
+.item-description{
+    display: none;
+}
+@media screen and (max-width:1168px) {
+
+    .liked-list-body{
+        background-color: #fff;
+    }
+    .selected-item{
+        width: calc(100% - 20px);
+        margin: 0 auto;
+        margin-bottom: 5px;
+        
+    }
+    .selected-item-img-container{
+        width: 100%;
+    }
+    .item-description{
+        display: flex;
+        justify-content: space-evenly;
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis; 
+        padding: 23px 28px;
+        font-size: 13.5px;
+    }
+    .choosedItem-link{
+        color: #532bc4;
+        text-decoration: none;
+        font-weight: 700;
+    }
+    .selected-item-text-container>h3{
+        max-width: 100%;
+    }
+    .selected-item-text-container{
+        background-color: #f7f7f7;
+    }
+    .liked-list-header> h2 {
+        font-size: 19px;
+    }
+    .liked-list-header{
+        flex-direction: column;
+    }
+    .selected-item-text-container h3, .choosedItemIconText h3{
+        font-size: 14px;
+    }
+}

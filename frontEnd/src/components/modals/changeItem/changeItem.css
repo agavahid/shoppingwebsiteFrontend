@@ -1,0 +1,78 @@
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn-modal {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+.btn-modal:hover{
+    background-color:rgb(46 39 39 / 20%);
+}
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.modal-close, .modal-send{
+    border: none;
+    outline: none;
+    height: 42px;
+    background: #94949466;
+    border-radius: 6px;
+    margin: 8px 0;
+    cursor: pointer;
+}
+.modal-close:hover, .modal-send:hover{
+    background-color: #949494d4;
+    color: #fff;
+}
+.changeIcon{
+    width: 20px;
+    height: 19px;
+    cursor: pointer;
+}
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+}
+.changeItemform-control{
+    height: 25px;
+    padding: 11px 16px;
+    width: calc(100% - 32px);
+    outline: 0;
+    border: none;
+    border-radius: 4px;
+}
+@media screen and (max-width: 1168px) {
+    .changeIcon {
+        width: 14px;
+        height: 13px;
+        cursor: pointer;
+    }
+    .btn-modal{
+        font-size: 13px;
+    }
+}
